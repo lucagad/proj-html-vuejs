@@ -1,6 +1,6 @@
 <template>
   <div class="container navbar_container">
-    <nav class="navbar_custom justify-content-md-between py-3 mb-4">
+    <nav class="navbar_custom justify-content-md-between py-2">
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li 
@@ -62,6 +62,7 @@ export default {
 
     ul{
       li{
+        margin: 0 10px;
         a{ 
           color: $navbar-item-color;
           .fa-chevron-down{ 
@@ -75,7 +76,7 @@ export default {
       @include flex-cnt();
 
       img{
-      width: 180px;
+      width: 150px;
       }
 
     }
