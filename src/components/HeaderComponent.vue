@@ -1,5 +1,5 @@
 <template>
-  <div class="container navbar_container">
+  <header class="container navbar_container">
     <nav class="navbar_custom justify-content-md-between py-2">
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
@@ -35,7 +35,7 @@
       </div>
 
     </nav>
-  </div>
+  </header>
 </template>
 
 <script>

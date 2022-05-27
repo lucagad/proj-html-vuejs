@@ -7,7 +7,8 @@
     <HeroComponent />
 
     <MainComponent />
-    <FooterComponent />
+    <FooterComponent
+    :FooterElements="this.footerItems"/>
     
   </div>
 </template>
@@ -66,7 +67,12 @@ export default {
             {
               text: 'About Us',
               href: '#'
-            },
+            }
+          ]
+          },
+          {
+          text: ' ',
+          sublinks:[ 
             {
               text: 'Success story',
               href: '#'
@@ -102,7 +108,7 @@ export default {
             }
           ]
           },
-        ],
+        ]
 
       }
     },
