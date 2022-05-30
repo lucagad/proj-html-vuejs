@@ -6,7 +6,9 @@
 
     <HeroComponent />
 
-    <MainComponent />
+    <MainComponent
+    :BlogArticles="this.blogArticles"/>
+
     <FooterComponent
     :FooterElements="this.footerItems"/>
     
@@ -109,6 +111,32 @@ export default {
             }
           ]
           },
+        ],
+        blogArticles:[
+          {
+            title: 'Brush Strokes Energize Trees in Paintings',
+            author: 'Artist',
+            img: 'artist-blog-03-480x325.jpeg',
+            date: 'May 15, 2020',
+            views: 688
+
+          },
+          {
+            title: 'Pocket-Sized Notebooks Hold Miniature Paintings',
+            author: 'Artist',
+            img: 'artist-blog-01-480x325.jpg',
+            date: 'May 15, 2020',
+            views: 603
+
+          },
+          {
+            title: 'Connection Between Self-Portraits and Identity',
+            author: 'Artist',
+            img: 'artist-blog-02-480x325.jpg',
+            date: 'May 15, 2020',
+            views: 397
+
+          }
         ]
 
       }

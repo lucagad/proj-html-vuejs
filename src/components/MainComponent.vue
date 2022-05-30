@@ -1,14 +1,22 @@
 <template>
   <main>
-    <newsletter-component />
+    <BlogComponent
+    :BlogArray="this.BlogArticles"/>
+    
+    <NewsletterComponent />
   </main>
 </template>
 
 <script>
+import BlogComponent from './SecondaryComponent/BlogComponent.vue'
 import NewsletterComponent from './SecondaryComponent/NewsletterComponent.vue'
+
 export default {
-  components: { NewsletterComponent },
-  name: 'MainComponent'
+  components: { NewsletterComponent, BlogComponent },
+  name: 'MainComponent',
+  props:{
+    BlogArticles: Array
+  }
 }
 </script>
 
