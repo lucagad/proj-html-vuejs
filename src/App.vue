@@ -7,7 +7,8 @@
     <HeroComponent />
 
     <MainComponent
-    :BlogArticles="this.blogArticles"/>
+    :BlogArticles="this.blogArticles"
+    :OnlineCourses="this.onlineCourses"/>
 
     <FooterComponent
     :FooterElements="this.footerItems"/>
@@ -137,7 +138,34 @@ export default {
             views: 397
 
           }
+        ],
+        onlineCourses:[
+          {
+            title: 'Learning to Write as a Professional Author',
+            price: '40.00',
+            img: 'course-02-480x298.jpg',
+            lessons: 20,
+            student: 50
+
+          },
+          {
+            title: 'Customer-centricInfo-Tech Strategies',
+            price: '0.00',
+            img: 'stock-full-hd-03-480x298.jpg',
+            lessons: 24,
+            student: 769
+
+          },
+          {
+            title: 'Open Programming Courses for Everyone: Python',
+            price: '19.00',
+            img: 'stock-full-hd-04-480x298.jpg',
+            lessons: 17,
+            student: 62
+
+          }
         ]
+
 
       }
     },

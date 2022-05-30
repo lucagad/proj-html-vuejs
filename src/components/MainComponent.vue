@@ -1,8 +1,12 @@
 <template>
   <main>
+
+    <CoursesComponent
+    :CourseArray="this.OnlineCourses"/>
+
     <BlogComponent
     :BlogArray="this.BlogArticles"/>
-    
+
     <NewsletterComponent />
   </main>
 </template>
@@ -10,12 +14,14 @@
 <script>
 import BlogComponent from './SecondaryComponent/BlogComponent.vue'
 import NewsletterComponent from './SecondaryComponent/NewsletterComponent.vue'
+import CoursesComponent from './SecondaryComponent/CoursesComponent.vue'
 
 export default {
-  components: { NewsletterComponent, BlogComponent },
+  components: { NewsletterComponent, BlogComponent, CoursesComponent },
   name: 'MainComponent',
   props:{
-    BlogArticles: Array
+    BlogArticles: Array,
+    OnlineCourses: Array
   }
 }
 </script>
