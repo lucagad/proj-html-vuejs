@@ -1,11 +1,13 @@
 <template>
   <main>
-    MAIN
+    <newsletter-component />
   </main>
 </template>
 
 <script>
+import NewsletterComponent from './SecondaryComponent/NewsletterComponent.vue'
 export default {
+  components: { NewsletterComponent },
   name: 'MainComponent'
 }
 </script>

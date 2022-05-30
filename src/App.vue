@@ -20,6 +20,7 @@ import MainComponent from './components/MainComponent.vue';
 import HeroComponent from './components/HeroComponent.vue';
 
 
+
 export default {
     name: "App",
     components: { HeaderComponent, FooterComponent, MainComponent, HeroComponent },
