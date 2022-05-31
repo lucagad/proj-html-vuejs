@@ -1,7 +1,7 @@
 <template>
   <div class="container_article">
     <div class="image_box">
-      <img :src="getImgUrl(ArticleData.img)" alt="">
+      <img :src="getImgUrl(ArticleData.img)" :alt="ArticleData.title">
     </div>
     <div class="text_box">
       <span class="article_author">{{ArticleData.author}}</span>

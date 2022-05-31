@@ -80,7 +80,7 @@ export default {
           color: $footer-title-color;
         }
         .col_right_inside{
-          margin: 0 25px;
+          margin: 0 5px;
           width: 100%;
 
           .list_elements {

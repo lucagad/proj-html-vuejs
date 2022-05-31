@@ -7,7 +7,7 @@
         <div class="col_left">
           <div class="title_box">
             <span class="pretitle">EVERYTHING IN <bold>MAXCOACH</bold></span>
-            <h2>Learn about our <br><color>Work Culture</color> at <br><bold>MaxCoach</bold></h2>
+            <h2><bold>Learn about our </bold><br><color>Work Culture</color><bold> at <br>MaxCoach</bold></h2>
             <p>Spend some time to visit our website or head office and discover our current courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month.</p>
             <span>Have questions?<a href="#"> Get Free Guide <font-awesome-icon class="btn_arrow" icon="fa-solid fa-arrow-right" /></a></span>
           </div>
@@ -15,13 +15,13 @@
 
         <div class="col_right">
           
-          <img class="img_back" src="../assets/img/stock-full-hd-10.jpg" alt="">
+          <img class="img_back" src="../assets/img/stock-full-hd-10.jpg" alt="background image">
           
           <div class="overlay">
-            <img class="img_top_left" src="../assets/img/maxcoach-shape-04.png" alt="">
+            <img class="img_top_left" src="../assets/img/maxcoach-shape-04.png" alt="shape">
             <img class="img_top" src="../assets/img/maxcoach-shape-07.png" alt="">
-            <img class="img_top_woman" src="../assets/img/about-us-01.jpg" alt="">
-            <img class="img_bottom" src="../assets/img/maxcoach-shape-02.png" alt="">
+            <img class="img_top_woman" src="../assets/img/about-us-01.jpg" alt="woman">
+            <img class="img_bottom" src="../assets/img/maxcoach-shape-02.png" alt="shape pixel">
           </div>
         </div>
 
@@ -42,14 +42,12 @@
         </div>
       </div>
 
-
-
       <div class="third_content">
 
         <div class="col_left">
-          <img class="img_back" src="../assets/img/stock-full-hd-11-670x450.jpg" alt="">
+          <img class="img_back" src="../assets/img/stock-full-hd-11-670x450.jpg" alt="background youtube">
           <div class="overlay">
-            <img class="img_youtube" src="../assets/img/icon-youtube-play.png" alt="">
+            <a href="#"><img class="img_youtube" src="../assets/img/icon-youtube-play.png" alt="youtube logo"></a>
           </div>
           
         </div>
@@ -57,7 +55,7 @@
         <div class="col_right">
           <div class="title_box">
             <span class="pretitle">How we work </span>
-            <h2> <bold>Upgrade Your <br> Skills</bold>  <color>Upgrade <br> Your Life</color></h2>
+            <h2> <bold>Upgrade Your <br> Skills</bold> <color>Upgrade <br> Your Life</color></h2>
             <p>Opening up more opportunities in front of you to get the ticket to more enjoyable door in life. Getting equipped with new skills for new sets of insights into your career. MaxCoach accompany learners in every stage of learning.</p>
             <a href="#"> Download free guidebook <font-awesome-icon class="btn_arrow" icon="fa-solid fa-arrow-right" /></a>
           </div>
@@ -67,6 +65,33 @@
     </div>
     <CoursesComponent
     :CourseArray="this.OnlineCourses"/>
+
+    <div class="container_main">
+
+      <div class="fifth_content">
+
+          <div class="col_left">
+            <img class="img_back" src="../assets/img/home-3-team-image.png" alt="background team">
+            <div class="overlay">
+              <img class="img_bottom_right" src="../assets/img/maxcoach-shape-07-150x150.png" alt="Shape">
+              <img class="img_top_left" src="../assets/img/maxcoach-shape-05-150x150.png" alt="Shape">
+              <img class="img_bottom_left" src="../assets/img/maxcoach-shape-01.png" alt="Shape">
+            </div>
+            
+          </div>
+
+          <div class="col_right">
+            <div class="title_box">
+              <span class="pretitle">Everything in <bold>maxcoach</bold> </span>
+              <h2> <bold>We're Here To <br></bold> <color>Trasform</color> <bold>You!</bold></h2>
+              <p>As learners, people can enjoy great companionship from MaxCoach mentors and educators. We can help you develop and grow at your best.</p>
+            <button class="btn_hero">Get Free Guide</button>
+
+            </div>
+          </div>
+      </div>
+  
+    </div>
 
     <BlogComponent
     :BlogArray="this.BlogArticles"/>
@@ -100,6 +125,7 @@ export default {
 
 .container_main{
   width: 75%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -114,9 +140,11 @@ export default {
 
     .title_box{
       @include flex-column-start();
+      color: $main-text-color;
 
       h2{
         margin: 20px 0;
+        color: black;
       }
 
       a{
@@ -125,7 +153,7 @@ export default {
 
       color{
         color: $blog-title-text-color;
-        font-weight: 300 !important;
+        font-weight: lighter !important;
       }
 
       bold{
@@ -232,9 +260,11 @@ export default {
 
     .title_box{
       @include flex-column-start();
+      color: $main-text-color;
 
       h2{
         margin: 20px 0;
+        color: black;
       }
 
       a{
@@ -243,7 +273,7 @@ export default {
 
       color{
         color: $blog-title-text-color;
-        font-weight: 300 !important;
+        font-weight: lighter !important;
       }
 
       bold{
@@ -273,6 +303,112 @@ export default {
 
     .overlay{
       position: absolute;
+    }
+  }
+}
+
+
+.fifth_content{
+  @include flex-cnt();
+  margin-top: 120px;
+  margin-bottom: 120px;
+  
+  .col_right{
+    height: 100%;
+    width: 40%;
+    padding-left: 25px;
+    padding-right: 40px;
+
+    .title_box{
+      @include flex-column-start();
+      color: $main-text-color;
+
+      h2{
+        margin: 20px 0;
+        color: black;
+      }
+
+      a{
+        color: $blog-title-text-color;
+      }
+
+      color {
+        color: $blog-title-text-color;
+        font-weight: lighter !important;
+      }
+
+      bold{
+        font-weight: 900;
+      }
+
+      span{
+        color: $blog-pretitle-text-color;
+        font-size: 12px;
+
+        &.pretitle{
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .btn_hero{ 
+      background-color: $hero-btn-text-color;
+      padding: 10px 40px;
+      border-radius: 10px;
+      border: 2px solid $hero-btn-text-color;
+
+      color: $hero-btn-background;
+      font-weight: bold;
+
+      &:hover{
+        background-color: $hero-btn-background;
+        border: 2px solid $hero-btn-text-color;
+        color: $hero-btn-text-color;
+
+      }
+
+      .btn_arrow{ 
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .col_left{
+    @include flex-cnt();
+    width: 60%;
+    height: 100%;
+    position: relative;
+    
+    .img_back{
+      width: 600px;
+      border-radius: 5px
+    }
+
+    .overlay{
+      position: absolute;
+
+      .img_bottom_right{
+        position: absolute;
+        width: 150px;
+        bottom: -373px;
+        right: -100px;
+        z-index: -1;
+      }
+
+      .img_bottom_left{
+        position: absolute;
+        width: 150px;
+        bottom: -180px;
+        right: 375px;
+      }
+
+      .img_top_left{
+        position: absolute;
+        width: 150px;
+        bottom: -40px;
+        right: 220px;
+        z-index: -1;
+      }
     }
   }
 }

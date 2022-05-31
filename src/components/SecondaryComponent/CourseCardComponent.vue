@@ -1,8 +1,8 @@
 <template>
   <div class="container_course">
     <div class="image_box">
-      <img :src="getImgUrl(CourseData.img)" alt="">
-      <img v-if="CourseData.price ==='0.00'" class="free_price" src="../../assets/img/free-label.png" alt="">
+      <img :src="getImgUrl(CourseData.img)" :alt="CourseData.title">
+      <img v-if="CourseData.price ==='0.00'" class="free_price" src="../../assets/img/free-label.png" alt="Free Course">
     </div>
     <div class="text_box">
       <span class="course_price">${{CourseData.price}}</span>
