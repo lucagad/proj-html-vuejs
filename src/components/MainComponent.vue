@@ -9,7 +9,7 @@
             <span class="pretitle">EVERYTHING IN <bold>MAXCOACH</bold></span>
             <h2><bold>Learn about our </bold><br><color>Work Culture</color><bold> at <br>MaxCoach</bold></h2>
             <p>Spend some time to visit our website or head office and discover our current courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month.</p>
-            <span>Have questions?<a href="#"> Get Free Guide <font-awesome-icon class="btn_arrow" icon="fa-solid fa-arrow-right" /></a></span>
+            <p>Have questions? <a href="#"> Get Free Guide <font-awesome-icon class="btn_arrow" icon="fa-solid fa-arrow-right" /></a></p>
           </div>
         </div>
 
@@ -70,6 +70,33 @@
     :CourseArray="this.OnlineCourses"/>
 
     <div class="container_main">
+
+      <div class="fourth_content">
+
+        <div class="col_left">
+          <div class="title_box">
+            <span class="pretitle">Testimonials</span>
+            <h2><bold>Why Do People </bold><br><color>*Hearts*</color><bold> Us?</bold></h2>
+            <p>Seeking for verbals of our service quality? Find them here.Everything is transparent and straightforward for your sense of justifcation.</p>
+            <a href="#"> View all <font-awesome-icon class="btn_arrow" icon="fa-solid fa-arrow-right" /></a>
+          </div>
+        </div>
+
+        <div class="col_right">
+            <div class="review_box">
+              <h5>Professional team of specialists and passionate mentors at reach</h5>
+              <p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
+              <div class="people_information">
+                <img class="img_people" src="../assets/img/testimonial-avata-01.jpg" alt="people image">
+                <div class="people_text">
+                  <h6>MADLEY PONDOR</h6>
+                  <span>/ IT Specialist</span>
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
 
       <div class="fifth_content">
 
@@ -152,6 +179,12 @@ export default {
 
       a{
         color: $blog-title-text-color;
+        text-decoration: none;
+        border-bottom: .5px solid black;
+
+        &:hover{
+          color: black;
+        }
       }
 
       color{
@@ -271,7 +304,13 @@ export default {
       }
 
       a{
-        color: $blog-title-text-color;
+        color: black;
+        text-decoration: none;
+        border-bottom: .5px solid black;
+
+        &:hover{
+          color: $blog-title-text-color;
+        }
       }
 
       color{
@@ -332,6 +371,98 @@ export default {
     }
   }
 }
+
+.fourth_content{
+  @include flex-cnt();
+  margin-top: 120px;
+  margin-bottom: 120px;
+  
+  .col_left{
+    width: 40%;
+    padding-left: 40px;
+
+    .title_box{
+      @include flex-column-start();
+      color: $main-text-color;
+
+      h2{
+        margin: 20px 0;
+        color: black;
+      }
+
+      a{
+        color: black;
+        text-decoration: none;
+        border-bottom: .5px solid black;
+      }
+
+      color{
+        color: $blog-title-text-color;
+        font-weight: lighter !important;
+      }
+
+      bold{
+        font-weight: 900;
+      }
+
+      span{
+        color: $blog-pretitle-text-color;
+        font-size: 12px;
+
+        &.pretitle{
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .col_right{
+    @include flex-cnt();
+    width: 60%;
+    position: relative;
+    
+    .review_box{
+      width: 80%;
+      height: 100%;
+      border: 1px solid lightgray;
+      background: white;
+      box-shadow: 0px 0px 10px 4px lightgray;
+      padding: 50px;
+      color: $main-text-color;
+
+      h5{
+        margin: 20px 0;
+        color: black;
+        font-weight: 900;
+      }
+
+      .people_information{
+        @include flex-start-cnt();
+
+        .img_people{
+          border-radius: 50%;
+          width: 70px;
+        }
+
+        .people_text{
+          @include flex-column-start();
+          padding: 10px;
+
+          h6{
+            color: black;
+            font-weight: 900;
+          }
+        }
+      }
+
+    }
+
+    .overlay{
+      position: absolute;
+    }
+  }
+}
+
 
 .fifth_content{
   @include flex-cnt();

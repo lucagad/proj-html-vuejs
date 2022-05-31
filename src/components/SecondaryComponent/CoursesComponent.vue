@@ -78,7 +78,7 @@ export default {
     }
 
     color{
-      color: $blog-title-text-color;
+      color: $course-title-text-color;
       font-weight: 300 !important;
     }
 
@@ -158,6 +158,13 @@ export default {
     a{
       color: black;
       font-weight: bold;
+      text-decoration: none;
+      border-bottom: .5px solid black;
+
+      &:hover{
+          color: $course-title-text-color;
+      }
+
     }
   }
 }

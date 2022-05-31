@@ -149,7 +149,7 @@ export default {
 
           },
           {
-            title: 'Customer-centricInfo-Tech Strategies',
+            title: 'Customer-centric Info-Tech Strategies',
             price: '0.00',
             img: 'stock-full-hd-03-480x298.jpg',
             lessons: 24,
