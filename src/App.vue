@@ -17,52 +17,51 @@
 </template>
 
 <script>
+
 import HeaderComponent from './components/HeaderComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import MainComponent from './components/MainComponent.vue';
 import HeroComponent from './components/HeroComponent.vue';
 
-
-
 export default {
-    name: "App",
-    components: { HeaderComponent, FooterComponent, MainComponent, HeroComponent },
-    data(){
-      return{
+  name: "App",
+  components: { HeaderComponent, FooterComponent, MainComponent, HeroComponent },
+  data(){
+    return{
 
-        navbarItems:[
+      navbarItems:[
           {
-          text: 'Home',
-          href: '#'
+            text: 'Home',
+            href: '#'
           },
           {
-          text: 'Pages',
-          href: '#'
+            text: 'Pages',
+            href: '#'
           },
           {
-          text: 'Courses',
-          href: '#'
+            text: 'Courses',
+            href: '#'
           },
           {
-          text: 'Features',
-          href: '#'
+            text: 'Features',
+            href: '#'
           },
           {
-          text: 'Blog',
-          href: '#'
+            text: 'Blog',
+            href: '#'
           },
           {
-          text: 'Shop',
-          href: '#'
+            text: 'Shop',
+            href: '#'
           },
-        ],
-        footerItems:[
+      ],
+      footerItems:[
           {
           text: 'Explore',
           sublinks:[ 
             {
-            text: 'Start Here',
-            href: '#'
+              text: 'Start Here',
+              href: '#'
             },
             {
               text: 'Blog',
@@ -95,8 +94,8 @@ export default {
           text: 'Information',
           sublinks:[ 
             {
-            text: 'Membership',
-            href: '#'
+              text: 'Membership',
+              href: '#'
             },
             {
               text: 'Purchase guide',
@@ -112,15 +111,14 @@ export default {
             }
           ]
           },
-        ],
-        blogArticles:[
+      ],
+      blogArticles:[
           {
             title: 'Brush Strokes Energize Trees in Paintings',
             author: 'Artist',
             img: 'artist-blog-03-480x325.jpeg',
             date: 'May 15, 2020',
             views: 688
-
           },
           {
             title: 'Pocket-Sized Notebooks Hold Miniature Paintings',
@@ -128,7 +126,6 @@ export default {
             img: 'artist-blog-01-480x325.jpg',
             date: 'May 15, 2020',
             views: 603
-
           },
           {
             title: 'Connection Between Self-Portraits and Identity',
@@ -136,17 +133,15 @@ export default {
             img: 'artist-blog-02-480x325.jpg',
             date: 'May 15, 2020',
             views: 397
-
           }
-        ],
-        onlineCourses:[
+      ],
+      onlineCourses:[
           {
             title: 'Learning to Write as a Professional Author',
             price: '40.00',
             img: 'course-02-480x298.jpg',
             lessons: 20,
             student: 50
-
           },
           {
             title: 'Customer-centric Info-Tech Strategies',
@@ -154,7 +149,6 @@ export default {
             img: 'stock-full-hd-03-480x298.jpg',
             lessons: 24,
             student: 769
-
           },
           {
             title: 'Open Programming Courses for Everyone: Python',
@@ -162,16 +156,11 @@ export default {
             img: 'stock-full-hd-04-480x298.jpg',
             lessons: 17,
             student: 62
-
           }
-        ]
-
-
-      }
-    },
-    methods:{
+      ]
 
     }
+  }
 }
 </script>
 
@@ -181,7 +170,5 @@ export default {
 @import './assets/style/mixins';
 @import './assets/style/utils';
 @import './assets/style/vars';
-
-
 
 </style>

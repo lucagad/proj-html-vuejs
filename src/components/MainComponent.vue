@@ -83,17 +83,17 @@
         </div>
 
         <div class="col_right">
-            <div class="review_box">
-              <h5>Professional team of specialists and passionate mentors at reach</h5>
-              <p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
-              <div class="people_information">
-                <img class="img_people" src="../assets/img/testimonial-avata-01.jpg" alt="people image">
-                <div class="people_text">
-                  <h6>MADLEY PONDOR</h6>
-                  <span>/ IT Specialist</span>
-                </div>
+          <div class="review_box">
+            <h5>Professional team of specialists and passionate mentors at reach</h5>
+            <p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
+            <div class="people_information">
+              <img class="img_people" src="../assets/img/testimonial-avata-01.jpg" alt="people image">
+              <div class="people_text">
+                <h6>MADLEY PONDOR</h6>
+                <span>/ IT Specialist</span>
               </div>
             </div>
+          </div>
         </div>
 
       </div>
@@ -462,7 +462,6 @@ export default {
     }
   }
 }
-
 
 .fifth_content{
   @include flex-cnt();
