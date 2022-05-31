@@ -48,6 +48,9 @@
           <img class="img_back" src="../assets/img/stock-full-hd-11-670x450.jpg" alt="background youtube">
           <div class="overlay">
             <a href="#"><img class="img_youtube" src="../assets/img/icon-youtube-play.png" alt="youtube logo"></a>
+            <img class="img_top_right" src="../assets/img/maxcoach-shape-04.png" alt="shape">
+            <img class="img_bottom_right" src="../assets/img/maxcoach-shape-07-150x150.png" alt="Shape">
+            <img class="img_top_left" src="../assets/img/maxcoach-shape-05-150x150.png" alt="Shape">
           </div>
           
         </div>
@@ -250,8 +253,8 @@ export default {
 
 .third_content{
   @include flex-cnt();
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 90px;
+  margin-bottom: 90px;
   
   .col_right{
     width: 40%;
@@ -303,10 +306,32 @@ export default {
 
     .overlay{
       position: absolute;
+
+      .img_bottom_right{
+        position: absolute;
+        width: 150px;
+        bottom: -245px;
+        right: -265px;
+        z-index: -1;
+      }
+
+      .img_top_right{
+        position: absolute;
+        width: 100px;
+        top: -220px;
+        right: -380px;
+      }
+
+      .img_top_left{
+        position: absolute;
+        width: 150px;
+        bottom: 65px;
+        right: 300px;
+        z-index: -1;
+      }
     }
   }
 }
-
 
 .fifth_content{
   @include flex-cnt();
