@@ -83,6 +83,14 @@
         </div>
 
         <div class="col_right">
+
+          <div class="under_review_box_top"> 
+            <div class="text_box">
+              <h6>The MaxCoach team works really hard to ensure high level of quality</h6>
+              <p>I am happy with their arrangement of lessons and subjects. They Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequatur corrupti aliquid, delectus eius deserunt at soluta et eaque voluptatum? Minus, officia? Ut, omnis impedit similique sit sequi aliquam cupiditate.</p>
+            </div>
+          </div>
+
           <div class="review_box">
             <h5>Professional team of specialists and passionate mentors at reach</h5>
             <p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
@@ -94,8 +102,18 @@
               </div>
             </div>
           </div>
-        </div>
 
+          <div class="under_review_box_bottom"> 
+            <div class="people_information">
+              <img class="img_people" src="../assets/img/testimonial-avata-02.jpg" alt="people image">
+              <div class="people_text">
+                <h6>MINA HOLLACE</h6>
+                <span>/ Freelancer</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
       <div class="fifth_content">
@@ -436,14 +454,15 @@ export default {
         font-weight: 900;
       }
 
-      .people_information{
+    }
+
+    .people_information{
         @include flex-start-cnt();
 
         .img_people{
           border-radius: 50%;
           width: 70px;
         }
-
         .people_text{
           @include flex-column-start();
           padding: 10px;
@@ -455,6 +474,41 @@ export default {
         }
       }
 
+    .under_review_box_top{
+      position: absolute;
+      bottom: 250px;
+      z-index: -1;
+      opacity: 20%;
+      width: 60%;
+      height: 150px;
+      border: 1px solid lightgray;
+      background: white;
+      box-shadow: 0px 0px 10px 4px lightgray;
+      padding: 30px;
+      color: $main-text-color;
+
+      .text_box{
+
+        h6{
+        color: black;
+        font-weight: 900;
+        }
+
+      }
+    }
+
+    .under_review_box_bottom{
+      position: absolute;
+      bottom: -105px;
+      z-index: -1;
+      opacity: 20%;
+      width: 60%;
+      height: 150px;
+      border: 1px solid lightgray;
+      background: white;
+      box-shadow: 0px 0px 10px 4px lightgray;
+      padding: 50px;
+      color: $main-text-color;
     }
 
     .overlay{
