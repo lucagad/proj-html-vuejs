@@ -45,8 +45,10 @@ export default {
 
 .container_article{
   margin: 20px;
-  height: 450px;
+  height: 100%;
   width: 320px;
+  padding-bottom: 30px;
+  cursor: pointer;
 
   .image_box{
     width: 100%;

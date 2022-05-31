@@ -50,6 +50,11 @@ export default {
   width: 320px;
   border-radius: 6px;
   background-color: $course-background-color;
+  cursor: pointer;
+
+  &:hover .text_box h5{
+    color: $course-price-text-color;
+  }
 
   .image_box{
     position: relative;
