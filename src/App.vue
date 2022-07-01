@@ -1,6 +1,8 @@
 <template>
   <div id="app">
 
+    <PortfolioHeaderComponent />
+
     <HeaderComponent
     :HeaderElements="this.navbarItems" />
 
@@ -22,10 +24,11 @@ import HeaderComponent from './components/HeaderComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import MainComponent from './components/MainComponent.vue';
 import HeroComponent from './components/HeroComponent.vue';
+import PortfolioHeaderComponent from './components/PortfolioHeaderComponent.vue';
 
 export default {
   name: "App",
-  components: { HeaderComponent, FooterComponent, MainComponent, HeroComponent },
+  components: { HeaderComponent, FooterComponent, MainComponent, HeroComponent, PortfolioHeaderComponent },
   data(){
     return{
 
