@@ -2,9 +2,9 @@
   <main>
     <div class="container_main">
 
-      <div class="first_content">
+      <div class="row first_content">
 
-        <div class="col_left">
+        <div class="col-12 col-lg-6 col_left">
           <div class="title_box">
             <span class="pretitle">EVERYTHING IN <bold>MAXCOACH</bold></span>
             <h2><bold>Learn about our </bold><br><color>Work Culture</color><bold> at <br>MaxCoach</bold></h2>
@@ -13,7 +13,7 @@
           </div>
         </div>
 
-        <div class="col_right">
+        <div class="col-12 col-lg-6 col_right">
           
           <img class="img_back" src="../assets/img/stock-full-hd-10.jpg" alt="background image">
           
@@ -27,24 +27,26 @@
 
       </div>
 
-      <div class="second_content">
-        <div class="first_box">
+      <!-- Fixato -->
+      <div class="row second_content">
+        <div class="col-12 col-lg-4 first_box">
           <p class="box_number">129+</p>
           <p class="box_subtitle">Enrolled Learner</p>
         </div>
-        <div class="second_box">
+        <div class="col-12 col-lg-4 second_box">
           <p class="box_number">80</p>
           <p class="box_subtitle">Finished Sessions</p>
         </div>
-        <div class="third_box">
+        <div class="col-12 col-lg-4 third_box">
           <p class="box_number">4%</p>
           <p class="box_subtitle">Satisfaction Rate</p>
         </div>
       </div>
 
-      <div class="third_content">
 
-        <div class="col_left">
+      <div class="row third_content">
+
+        <div class="col-12 col-lg-6 col_left">
           <img class="img_back" src="../assets/img/stock-full-hd-11-670x450.jpg" alt="background youtube">
           <div class="overlay">
             <a href="#"><img class="img_youtube" src="../assets/img/icon-youtube-play.png" alt="youtube logo"></a>
@@ -55,7 +57,7 @@
           
         </div>
 
-        <div class="col_right">
+        <div class="col-12 col-lg-6 col_right">
           <div class="title_box">
             <span class="pretitle">How we work </span>
             <h2> <bold>Upgrade Your <br> Skills</bold> <color>Upgrade <br> Your Life</color></h2>
@@ -284,7 +286,7 @@ export default {
   .first_box,
   .second_box,
   .third_box{
-    margin: 25px;
+    margin: 25px 0;
   }
   .box_number{
     font-size: 40px;

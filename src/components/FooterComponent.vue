@@ -2,8 +2,9 @@
   <footer class="wrapper">
     <div class="container footer_container">
 
-      <div class="top_footer">
-        <div class="col_left">
+      <div class="row top_footer">
+
+        <div class="col-12 col-lg-6 col_left">
           <div class="address_box">
             <h5>Address</h5>
             <p>382 NE 191st St # 87394 Miami, FL 33179-3899 <br>
@@ -17,9 +18,9 @@
             </div>
           </div>
         </div>
-        <div class="col_right row">
+        <div class="col-12 col-lg-6 row col_right">
 
-          <div v-for="(element,index) in FooterElements" :key="`footer-element-${index}`" class="col_right_inside col">
+          <div v-for="(element,index) in FooterElements" :key="`footer-element-${index}`" class="col col_right_inside">
             <h5>{{element.text}}</h5>
 
             <div class="list_elements">
@@ -58,8 +59,9 @@ export default {
 .wrapper{
   position: relative;
   background-color: $footer-background-color;
-  height: 400px;
+  // height: 400px;
   width: 100%;
+  padding-bottom: 30px;
 
   .footer_container{
     @include flex-column-cnt();
@@ -73,14 +75,16 @@ export default {
 
 
       .col_right{ 
-        width: 50%; 
+        // width: 50%;
+        margin: 20px 0;
         @include flex-sbtw();
 
         h5{ 
           color: $footer-title-color;
         }
+
         .col_right_inside{
-          margin: 0 5px;
+          // margin: 0 5px;
           width: 100%;
 
           .list_elements {
@@ -103,7 +107,8 @@ export default {
       }
 
       .col_left{
-        width: 50%; 
+        // width: 50%;
+        margin: 20px 0;
         @include flex-sbtw();
 
         .social_links{ 
