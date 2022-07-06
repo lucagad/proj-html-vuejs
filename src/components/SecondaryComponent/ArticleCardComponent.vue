@@ -47,8 +47,18 @@ export default {
   margin: 20px;
   height: 100%;
   width: 320px;
-  padding-bottom: 30px;
+  padding: 15px;
   cursor: pointer;
+
+  &:hover{
+    background-color: $blog-background-color-hover;
+    border-radius: 10px;
+  }
+
+  &:hover .text_box .article_information span,
+  &:hover .text_box h5{
+    color: $article-text-color-hover;
+  }
 
   .image_box{
     width: 100%;
@@ -90,6 +100,8 @@ export default {
       }
     }
   }
+
+
 }
 
 </style>
