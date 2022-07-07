@@ -73,12 +73,7 @@ export default {
             {
               text: 'About Us',
               href: '#'
-            }
-          ]
-          },
-          {
-          text: ' ',
-          sublinks:[ 
+            },
             {
               text: 'Success story',
               href: '#'
