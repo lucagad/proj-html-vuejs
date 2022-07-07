@@ -18,9 +18,9 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-6 row col_right">
+        <div class="row col-12 col-lg-6 col_right">
 
-          <div v-for="(element,index) in FooterElements" :key="`footer-element-${index}`" class="col col_right_inside">
+          <div v-for="(element,index) in FooterElements" :key="`footer-element-${index}`" class="col-12 col-lg-6 col_right_inside">
             <h5>{{element.text}}</h5>
 
             <div class="list_elements">
@@ -85,7 +85,7 @@ export default {
 
         .col_right_inside{
           // margin: 0 5px;
-          width: 100%;
+          // width: 100%;
 
           .list_elements {
             width: 100%;

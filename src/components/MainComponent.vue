@@ -2,9 +2,10 @@
   <main>
     <div class="container_main">
 
+      <!-- Fixato Mobile -->
       <div class="row first_content">
 
-        <div class="col-12 col-lg-6 col_left">
+        <div class="col-12 col-lg-4 col_left my-5">
           <div class="title_box">
             <span class="pretitle">EVERYTHING IN <bold>MAXCOACH</bold></span>
             <h2><bold>Learn about our </bold><br><color>Work Culture</color><bold> at <br>MaxCoach</bold></h2>
@@ -13,9 +14,9 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-6 col_right">
+        <div class="col-12 col-lg-8 col_right my-5">
           
-          <img class="img_back" src="../assets/img/stock-full-hd-10.jpg" alt="background image">
+          <img class="img_back img-fluid" src="../assets/img/stock-full-hd-10.jpg" alt="background image">
           
           <div class="overlay">
             <img class="img_top_left" src="../assets/img/maxcoach-shape-04.png" alt="shape">
@@ -27,7 +28,7 @@
 
       </div>
 
-      <!-- Fixato -->
+      <!-- Fixato Mobile -->
       <div class="row second_content">
         <div class="col-12 col-lg-4 first_box">
           <p class="box_number">129+</p>
@@ -43,11 +44,11 @@
         </div>
       </div>
 
-
+      <!-- Fixato Mobile -->
       <div class="row third_content">
 
-        <div class="col-12 col-lg-6 col_left">
-          <img class="img_back" src="../assets/img/stock-full-hd-11-670x450.jpg" alt="background youtube">
+        <div class="col-12 col-lg-8 col_left my-3 my-lg-5">
+          <img class="img_back img-fluid" src="../assets/img/stock-full-hd-11-670x450.jpg" alt="background youtube">
           <div class="overlay">
             <a href="#"><img class="img_youtube" src="../assets/img/icon-youtube-play.png" alt="youtube logo"></a>
             <img class="img_top_right" src="../assets/img/maxcoach-shape-04.png" alt="shape">
@@ -57,7 +58,7 @@
           
         </div>
 
-        <div class="col-12 col-lg-6 col_right">
+        <div class="col-12 col-lg-4 col_right my-3 my-lg-5">
           <div class="title_box">
             <span class="pretitle">How we work </span>
             <h2> <bold>Upgrade Your <br> Skills</bold> <color>Upgrade <br> Your Life</color></h2>
@@ -68,23 +69,25 @@
       </div>
 
     </div>
+
+    <!-- Fixato Mobile -->
     <CoursesComponent
-    :CourseArray="this.OnlineCourses"/>
+      :CourseArray="this.OnlineCourses"/>
 
     <div class="container_main">
 
-      <div class="fourth_content">
+      <div class="row fourth_content">
 
-        <div class="col_left">
+        <div class="col-12 col-lg-6 col_left my-5">
           <div class="title_box">
             <span class="pretitle">Testimonials</span>
             <h2><bold>Why Do People </bold><br><color>*Hearts*</color><bold> Us?</bold></h2>
-            <p>Seeking for verbals of our service quality? Find them here.Everything is transparent and straightforward for your sense of justifcation.</p>
+            <p>Seeking for verbals of our service quality? Find them here. <br>Everything is transparent and straightforward for your sense of justifcation.</p>
             <a href="#"> View all <font-awesome-icon class="btn_arrow" icon="fa-solid fa-arrow-right" /></a>
           </div>
         </div>
 
-        <div class="col_right">
+        <div class="col-12 col-lg-6 col_right my-5">
 
           <div class="under_review_box_top"> 
             <div class="text_box">
@@ -120,8 +123,8 @@
 
       <div class="fifth_content">
 
-          <div class="col_left">
-            <img class="img_back" src="../assets/img/home-3-team-image.png" alt="background team">
+          <div class="col-12 col-lg-8 col_left my-5">
+            <img class="img_back img-fluid" src="../assets/img/home-3-team-image.png" alt="background team">
             <div class="overlay">
               <img class="img_bottom_right" src="../assets/img/maxcoach-shape-07-150x150.png" alt="Shape">
               <img class="img_top_left" src="../assets/img/maxcoach-shape-05-150x150.png" alt="Shape">
@@ -130,7 +133,7 @@
             
           </div>
 
-          <div class="col_right">
+          <div class="col-12 col-lg-4 col_right my-5">
             <div class="title_box">
               <span class="pretitle">Everything in <bold>maxcoach</bold> </span>
               <h2> <bold>We're Here To <br></bold> <color>Trasform</color> <bold>You!</bold></h2>
@@ -181,12 +184,10 @@ export default {
 
 .first_content{
   @include flex-cnt();
-  margin-top: 120px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   
   .col_left{
-    width: 40%;
-    padding-left: 40px;
 
     .title_box{
       @include flex-column-start();
@@ -229,7 +230,6 @@ export default {
 
   .col_right{
     @include flex-cnt();
-    width: 60%;
     position: relative;
     
 
@@ -268,7 +268,7 @@ export default {
 
     .img_top_woman{
       position: absolute;
-      width: 135px;
+      width: 115px;
       top: -225px;
       right: -275px;
       border-radius: 5px
@@ -310,7 +310,6 @@ export default {
   margin-bottom: 90px;
   
   .col_right{
-    width: 40%;
     padding-left: 25px;
     padding-right: 40px;
 
@@ -355,7 +354,6 @@ export default {
 
   .col_left{
     @include flex-cnt();
-    width: 60%;
     position: relative;
     
     .img_back{
@@ -394,11 +392,11 @@ export default {
 
 .fourth_content{
   @include flex-cnt();
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 150px;
+  margin-bottom: 150px;
   
   .col_left{
-    width: 40%;
+    // width: 40%;
     padding-left: 40px;
 
     .title_box{
@@ -438,11 +436,11 @@ export default {
 
   .col_right{
     @include flex-cnt();
-    width: 60%;
+    // width: 60%;
     position: relative;
     
     .review_box{
-      width: 80%;
+      width: auto;
       height: 100%;
       border: 1px solid lightgray;
       background: white;
@@ -481,7 +479,7 @@ export default {
       bottom: 250px;
       z-index: -1;
       opacity: 20%;
-      width: 60%;
+      width: 80%;
       height: 150px;
       border: 1px solid lightgray;
       background: white;
@@ -504,7 +502,7 @@ export default {
       bottom: -105px;
       z-index: -1;
       opacity: 20%;
-      width: 60%;
+      width: 80%;
       height: 150px;
       border: 1px solid lightgray;
       background: white;
@@ -526,7 +524,7 @@ export default {
   
   .col_right{
     height: 100%;
-    width: 40%;
+    // width: 40%;
     padding-left: 25px;
     padding-right: 40px;
 
@@ -586,7 +584,7 @@ export default {
 
   .col_left{
     @include flex-cnt();
-    width: 60%;
+    // width: 60%;
     height: 100%;
     position: relative;
     
@@ -600,8 +598,8 @@ export default {
 
       .img_bottom_right{
         position: absolute;
-        width: 150px;
-        bottom: -373px;
+        width: 120px;
+        bottom: -330px;
         right: -100px;
         z-index: -1;
       }
@@ -617,7 +615,7 @@ export default {
         position: absolute;
         width: 150px;
         bottom: -40px;
-        right: 220px;
+        right: 195px;
         z-index: -1;
       }
     }
