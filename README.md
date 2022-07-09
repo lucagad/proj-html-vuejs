@@ -7,7 +7,7 @@ https://mid-project.lucagaddini.com
 
 ## Screenshots
 
-![App Screenshot](https://i.postimg.cc/Gmvfwpcr/Screenshot-Mid-Project.jpg)
+![App Screenshot](https://i.postimg.cc/JnSgCHBr/Screenshot-Mid-Project.jpg)
 
 
 ## 🔗 Links
