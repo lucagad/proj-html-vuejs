@@ -76,6 +76,7 @@
 
     <div class="container_main">
 
+      <!-- Fixato Mobile -->
       <div class="row fourth_content">
 
         <div class="col-12 col-lg-6 col_left my-5">
@@ -89,7 +90,7 @@
 
         <div class="col-12 col-lg-6 col_right my-5">
 
-          <div class="under_review_box_top"> 
+          <div class="d-none d-md-block under_review_box_top"> 
             <div class="text_box">
               <h6>The MaxCoach team works really hard to ensure high level of quality</h6>
               <p>I am happy with their arrangement of lessons and subjects. They Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequatur corrupti aliquid, delectus eius deserunt at soluta et eaque voluptatum? Minus, officia? Ut, omnis impedit similique sit sequi aliquam cupiditate.</p>
@@ -108,7 +109,7 @@
             </div>
           </div>
 
-          <div class="under_review_box_bottom"> 
+          <div class="d-none d-md-block under_review_box_bottom"> 
             <div class="people_information">
               <img class="img_people" src="../assets/img/testimonial-avata-02.jpg" alt="people image">
               <div class="people_text">
@@ -121,6 +122,7 @@
         </div>
       </div>
 
+      <!-- Fixato Mobile -->
       <div class="fifth_content">
 
           <div class="col-12 col-lg-8 col_left my-5">
@@ -149,6 +151,7 @@
     <BlogComponent
     :BlogArray="this.BlogArticles"/>
 
+    <!-- Fixato Mobile -->
     <NewsletterComponent />
     
   </main>
@@ -280,13 +283,13 @@ export default {
 .second_content{
   @include flex-cnt();
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
   .first_box,
   .second_box,
   .third_box{
-    margin: 25px 0;
+    margin: 10px 0;
   }
   .box_number{
     font-size: 40px;
@@ -392,11 +395,10 @@ export default {
 
 .fourth_content{
   @include flex-cnt();
-  margin-top: 150px;
+  margin-top: 60px;
   margin-bottom: 150px;
   
   .col_left{
-    // width: 40%;
     padding-left: 40px;
 
     .title_box{
@@ -436,7 +438,6 @@ export default {
 
   .col_right{
     @include flex-cnt();
-    // width: 60%;
     position: relative;
     
     .review_box{
@@ -519,8 +520,8 @@ export default {
 
 .fifth_content{
   @include flex-cnt();
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   
   .col_right{
     height: 100%;

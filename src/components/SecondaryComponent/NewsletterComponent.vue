@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="background_img_container_right">
-      <img class="img_top" src="../../assets/img/maxcoach-shape-08.png" alt="">
-      <img class="img_bottom" src="../../assets/img/maxcoach-shape-02.png" alt="">
+      <img class="d-none d-md-block img_top" src="../../assets/img/maxcoach-shape-08.png" alt="">
+      <img class="d-none d-md-block img_bottom" src="../../assets/img/maxcoach-shape-02.png" alt="">
     </div>
     <div class="background_img_container_left">
       <img class="img_top" src="../../assets/img/maxcoach-shape-03.png" alt="">
